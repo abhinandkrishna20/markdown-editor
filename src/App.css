@@ -1,38 +1,73 @@
-.App {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Navbar */
+.navbar {
+  background-color: #343a40;
   color: white;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Editor */
+.editor-container {
+  width: 45%;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Preview */
+.preview-container {
+  width: 45%;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+  min-height: 300px;
+}
+
+.preview-container h3 {
+  margin-top: 0;
+}
+
+/* Markdown Styling */
+.preview h1 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.preview h2 {
+  font-size: 1.5rem;
+  color: #0056b3;
+}
+
+.preview code {
+  background-color: #f4f4f4;
+  padding: 5px;
+  margin: auto;
+  border-radius: 3px;
+  font-family: "Courier New", Courier, monospace;
 }
