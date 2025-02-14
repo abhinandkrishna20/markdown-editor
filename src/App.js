@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Editor from "./components/Editor";
 import Preview from "./components/Preview";
+import Footer from "./components/Footer";
 
 function App() {
   const [markdown, setMarkdown] = useState(""); // <-- Define State Here
@@ -15,6 +16,7 @@ function App() {
       <Preview markdown={markdown} />
 
     </div>
+    <Footer />
     </div>
   );
 }
