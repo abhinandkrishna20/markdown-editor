@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Markdown Editor - Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Project Overview
+This is a simple Markdown Editor built with **React** that allows users to write and preview Markdown content in real-time. It supports GitHub-flavored Markdown (GFM) and provides a clean UI for easy editing.
 
-## Available Scripts
+## ✨ Features
+- Live Markdown Preview
+- Supports **GitHub Flavored Markdown (GFM)**
+- User-friendly **Editor & Preview Layout**
+- Mobile Responsive Design
+- Social Media Links in Footer
+- **Deployed on Firebase** for easy access
 
-In the project directory, you can run:
+## 🔧 Installation & Setup
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/abhinandkrishna20/markdown-editor.git
+cd markdown-editor
+```
 
-### `yarn start`
+### 2️⃣ Install Dependencies
+Using **Yarn**:
+```bash
+yarn install
+```
+Or using **npm**:
+```bash
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3️⃣ Run the Application
+```bash
+yarn start
+```
+This will start the React app on `http://localhost:3000`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📖 Usage Guide
+1. **Write Markdown** in the editor.
+2. **See real-time preview** on the right side.
+3. **Use GitHub-flavored Markdown** for tables, strikethroughs, and task lists.
+4. **Copy or save** your Markdown content as needed.
 
-### `yarn test`
+## 🚀 Deployment Guide (Firebase)
+### 1️⃣ Build the App
+```bash
+yarn build
+```
+### 2️⃣ Initialize Firebase
+```bash
+firebase init
+```
+- Select **Hosting**
+- Set `build/` as the public directory
+- Choose **Single Page App (SPA)** option
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3️⃣ Deploy
+```bash
+firebase deploy
+```
+This will provide a **live URL** where your Markdown Editor is hosted.
 
-### `yarn build`
+## 📌 Future Improvements
+- **Save Notes** functionality
+- **Dark Mode Support**
+- **Export to PDF or Markdown File**
+- **Authentication (Login/Signup)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+This documentation covers everything you need to know to set up and run the project. Happy coding! 🚀
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #140d1b;
+    color: white;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Main Layout */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+   
+    flex-wrap: nowrap; /* Prevent wrapping on large screens */
+  }
+  
+  /* Editor & Preview */
+  .editor-container,
+  .preview-container {
+    width: 50%;
+    padding: auto;
+    min-height: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 20px; /* Ensures margin in mobile view */
+  }
+  .main-content {
+    flex: 1; /* This pushes the footer down */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }  
+  
+  /* Textarea (Editor) */
+  textarea {
+    width: 95%;
+    height: 350px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  /* Preview */
+  .preview {
+    padding: 10px;
+    background-color: #fff;
+    min-height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Markdown Styling */
+  .preview h1 {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .preview h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+  }
+  
+  .preview code {
+    background-color: #f4f4f4;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: "Courier New", Courier, monospace;
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+    }
+  
+    .editor-container, .preview-container {
+      width: 100%; /* Full width on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack elements */
+      align-items: center;
+    }
+  
+    .editor-container, .preview-container {
+      width: 90%; /* Use more screen space on mobile */
+      margin-bottom: 15px; /* Add space between Editor and Preview */
+    }
+  
+    textarea {
+      height: 300px; /* Slightly reduce height on smaller screens */
+    }
+  
+    .preview {
+      min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      font-size: 1.5rem; /* Reduce navbar size */
+      padding: 10px;
+    }
+  
+    .editor-container, .preview-container {
+      width: 95%; /* Full width with padding on very small screens */
+      padding: 15px;
+      margin-bottom: 20px; /* Add spacing */
+    }
+  
+    textarea {
+      height: 250px; /* Reduce textarea height for better fit */
+    }
+  
+    .preview {
+      min-height: 250px;
+    }
+  }
+  
